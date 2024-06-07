@@ -493,14 +493,51 @@ fig.update_layout(
 fig.show()
 ```
 
+# Add your repository to Github
+
+1. Open **Github Desktop** and go to File>New Repository. Enter the local path to your repository:
+
+![](media/Picture23.png)
+
+2. Once created click on **Publish repository** in Github Desktop main window.
+
+![](media/Picture24.png)
+
+3. If you go the the **History** tab, you can change what has been publish. You should see all your repository.
+
+![](media/Picture25.png)
+
+4. Now go to your account on [Github](https://github.com/), click on your user profile image, repository:
+
+![](media/Picture26.png)
+
+
 # Publish to Github
 
-Now that you created your pages, we will publish them using Github.
+Now that you created your pages and that your repository have been publish on Github, we will deploy your website using **Github Pages**.
 
 1. In your terminal enter: 
 
 ```{.python}
-quarto-render
+quarto render
 ```
+You can see it has created a **docs** folder at the root of your repository.
+
+![](media/Picture27.png)
+
+::: {.callout-note}
+If you are still visualising the preview of your website using ``CTRL+SHIFT+K``, you will notice that your terminal is busy. 
+In order to kill the command, click on your terminal and use ``CTRL+C``.
+:::
+
+2. Go to the ``SOURCE CONTROL`` tab on the left side bar of VS code. You'll see there is several changes stashed. You will commit them to github.
+
+![](media/Picture28.png)
+
+3. Click on the **+** sign **Staged All Changes**. 
+
+![](media/Picture29.png)
+
+4. Then click on **Commit**.
 
 
