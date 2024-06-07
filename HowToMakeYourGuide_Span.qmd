@@ -67,7 +67,7 @@ Para usar **Quarto** con VS Code, necesitaremos instalar la extensión.
 
 3. Para comenzar a crear tu página web, crea un nuevo archivo **.qmd**. Haz clic derecho en tu carpeta recién creada y selecciona `New file`. Aquí lo llamaré **HowToMakeYourGuide_Span.qmd**.
 
-![](media/Picture3a.png.png)
+![](media/Picture3a.png)
 
 4. Luego necesitaremos crear e inicializar un archivo .yml que contendrá la información del sitio web: el título, los paneles de la barra de navegación y las páginas web (.qmd) que configuraremos a continuación. Crea un nuevo archivo y nómbralo **_quarto.yml**
 
