@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Marion Iseppi, Consultora Senior">
+<meta name="dcterms.date" content="2024-06-06">
 
-<title>How To Make Your Guide – howtomakeyourguide_span</title>
+<title>How To Make Your Guide - Cómo Hacer Tu Guía</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +22,69 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -58,6 +123,25 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+        <script type="text/javascript">
+        window.PlotlyConfig = {MathJaxConfig: 'local'};
+        if (window.MathJax && window.MathJax.Hub && window.MathJax.Hub.Config) {window.MathJax.Hub.Config({SVG: {font: "STIX-Web"}});}
+        if (typeof require !== 'undefined') {
+        require.undef("plotly");
+        requirejs.config({
+            paths: {
+                'plotly': ['https://cdn.plot.ly/plotly-2.32.0.min']
+            }
+        });
+        require(['plotly'], function(Plotly) {
+            window._Plotly = Plotly;
+        });
+        }
+        </script>
+        
 
 
 <link rel="stylesheet" href="styles/srk.css">
@@ -80,12 +164,12 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./HowToMakeYourGuide_Eng.html">
- <span class="menu-text">Eng</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="./HowToMakeYourGuide_Span.html" aria-current="page">
  <span class="menu-text">Span</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./HowToMakeYourGuide_Eng.html">
+ <span class="menu-text">Eng</span></a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -94,19 +178,665 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Cómo Hacer Tu Guía</h1>
+            <p class="subtitle lead">Saber Cómo Generar Informes Interactivos</p>
+                      </div>
+  </div>
+    
+  <div class="quarto-title-meta-author">
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Affiliation</div>
+    
+      <div class="quarto-title-meta-contents">
+      Marion Iseppi, Consultora Senior <a href="https://orcid.org/0000-0002-7018-9270" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a>
+    </div>
+      <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              <a href="https://www.srk.com/es/contactenos/chile">
+              SRK Consulting Chile SpA
+              </a>
+            </p>
+        </div>
+      </div>
+
+  <div class="quarto-title-meta">
+
+        
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 6, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenido</h2>
+   
+  <ul>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción"><span class="toc-section-number">1</span>  Introducción</a></li>
+  <li><a href="#configura-tu-entorno" id="toc-configura-tu-entorno" class="nav-link" data-scroll-target="#configura-tu-entorno"><span class="toc-section-number">2</span>  Configura tu entorno</a>
+  <ul class="collapse">
+  <li><a href="#instalar-quarto" id="toc-instalar-quarto" class="nav-link" data-scroll-target="#instalar-quarto"><span class="toc-section-number">2.1</span>  Instalar Quarto</a></li>
+  <li><a href="#instalar-extensiones" id="toc-instalar-extensiones" class="nav-link" data-scroll-target="#instalar-extensiones"><span class="toc-section-number">2.2</span>  Instalar extensiones</a></li>
+  </ul></li>
+  <li><a href="#configura-tu-sitio-web" id="toc-configura-tu-sitio-web" class="nav-link" data-scroll-target="#configura-tu-sitio-web"><span class="toc-section-number">3</span>  Configura tu sitio web</a>
+  <ul class="collapse">
+  <li><a href="#configura-tu-página-principal" id="toc-configura-tu-página-principal" class="nav-link" data-scroll-target="#configura-tu-página-principal"><span class="toc-section-number">3.1</span>  Configura tu página principal</a></li>
+  <li><a href="#agregar-otra-página" id="toc-agregar-otra-página" class="nav-link" data-scroll-target="#agregar-otra-página"><span class="toc-section-number">3.2</span>  Agregar otra página</a></li>
+  </ul></li>
+  <li><a href="#construye-tu-página-web" id="toc-construye-tu-página-web" class="nav-link" data-scroll-target="#construye-tu-página-web"><span class="toc-section-number">4</span>  Construye tu página web</a>
+  <ul class="collapse">
+  <li><a href="#sección-de-encabezado" id="toc-sección-de-encabezado" class="nav-link" data-scroll-target="#sección-de-encabezado"><span class="toc-section-number">4.1</span>  Sección de encabezado</a></li>
+  <li><a href="#estilo" id="toc-estilo" class="nav-link" data-scroll-target="#estilo"><span class="toc-section-number">4.2</span>  Estilo</a></li>
+  <li><a href="#autoría" id="toc-autoría" class="nav-link" data-scroll-target="#autoría"><span class="toc-section-number">4.3</span>  Autoría</a>
+  <ul class="collapse">
+  <li><a href="#encabezados-y-listas" id="toc-encabezados-y-listas" class="nav-link" data-scroll-target="#encabezados-y-listas"><span class="toc-section-number">4.3.1</span>  Encabezados y listas</a></li>
+  <li><a href="#formato-de-texto" id="toc-formato-de-texto" class="nav-link" data-scroll-target="#formato-de-texto"><span class="toc-section-number">4.3.2</span>  Formato de texto</a></li>
+  <li><a href="#notas" id="toc-notas" class="nav-link" data-scroll-target="#notas"><span class="toc-section-number">4.3.3</span>  Notas</a></li>
+  <li><a href="#enlaces-e-imágenes" id="toc-enlaces-e-imágenes" class="nav-link" data-scroll-target="#enlaces-e-imágenes"><span class="toc-section-number">4.3.4</span>  Enlaces e imágenes</a></li>
+  <li><a href="#tablas" id="toc-tablas" class="nav-link" data-scroll-target="#tablas"><span class="toc-section-number">4.3.5</span>  Tablas</a></li>
+  <li><a href="#incluir-celdas-de-python" id="toc-incluir-celdas-de-python" class="nav-link" data-scroll-target="#incluir-celdas-de-python"><span class="toc-section-number">4.3.6</span>  Incluir celdas de Python</a></li>
+  <li><a href="#mostrar-bloque-de-código-delimitado" id="toc-mostrar-bloque-de-código-delimitado" class="nav-link" data-scroll-target="#mostrar-bloque-de-código-delimitado"><span class="toc-section-number">4.3.7</span>  Mostrar bloque de código delimitado</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#agrega-tu-repositorio-a-github" id="toc-agrega-tu-repositorio-a-github" class="nav-link" data-scroll-target="#agrega-tu-repositorio-a-github"><span class="toc-section-number">5</span>  Agrega tu repositorio a GitHub</a></li>
+  <li><a href="#publicar-en-github" id="toc-publicar-en-github" class="nav-link" data-scroll-target="#publicar-en-github"><span class="toc-section-number">6</span>  Publicar en GitHub</a>
+  <ul class="collapse">
+  <li><a href="#prepara-tu-proyecto-para-github" id="toc-prepara-tu-proyecto-para-github" class="nav-link" data-scroll-target="#prepara-tu-proyecto-para-github"><span class="toc-section-number">6.1</span>  Prepara tu proyecto para GitHub</a></li>
+  <li><a href="#github-pages" id="toc-github-pages" class="nav-link" data-scroll-target="#github-pages"><span class="toc-section-number">6.2</span>  GitHub Pages</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
+<section id="introducción" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introducción</h1>
+<p>Los informes HTML son cada vez más populares ya que permiten una apariencia profesional rápida, incluir gráficos y mapas interactivos. Dashboard Power BI se usa comúnmente dentro de SRK (<a href="https://learn.microsoft.com/en-us/power-bi/create-reports/service-dashboards">Conceptos básicos del Dashboard</a>), es muy útil especialmente para monitorear proyectos.</p>
+<p>Pero los informes HTML tienen varias ventajas:</p>
+<ul>
+<li>accesibles desde cualquier máquina (computadora, tabletas, teléfono)</li>
+<li>actualízalo sobre la marcha, así te aseguras de que el cliente siempre esté usando la última versión</li>
+<li>puedes incluir fácilmente una opción para descargar tu informe como un documento pdf, word o powerpoint ya que los clientes suelen usar nuestras figuras para sus propios informes internos</li>
+</ul>
+</section>
+<section id="configura-tu-entorno" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Configura tu entorno</h1>
+<section id="instalar-quarto" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="instalar-quarto"><span class="header-section-number">2.1</span> Instalar Quarto</h2>
+<p><strong>Quarto</strong> es un sistema de publicación científica y técnica de código abierto diseñado para crear documentos, informes, presentaciones y sitios web de alta calidad. Se integra perfectamente con herramientas y lenguajes como R, Python y Jupyter, lo que permite a los autores combinar texto, código y visualizaciones en un solo documento.</p>
+<ol type="1">
+<li>Instala Quarto en tu máquina. Ve a <a href="https://quarto.org/docs/get-started/">aquí</a>. Tendrás que reiniciar tu máquina.</li>
+</ol>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Documentación extensa está disponible <a href="https://quarto.org/docs/guide/">en línea</a>.</p>
+</div>
+</div>
+</section>
+<section id="instalar-extensiones" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="instalar-extensiones"><span class="header-section-number">2.2</span> Instalar extensiones</h2>
+<p>Para usar <strong>Quarto</strong> con VS Code, necesitaremos instalar la extensión.</p>
+<ol type="1">
+<li>Ve a la barra lateral en VS Code y selecciona <code>Extensiones</code> o <code>CTRL+X</code>.</li>
+<li>Busca Quarto e instala la extensión.</li>
+</ol>
+<p><img src="media/Picture1.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="configura-tu-sitio-web" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Configura tu sitio web</h1>
+<section id="configura-tu-página-principal" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="configura-tu-página-principal"><span class="header-section-number">3.1</span> Configura tu página principal</h2>
+<ol type="1">
+<li>Ve a la ventana <strong>Explorer</strong>, haz clic derecho y selecciona <code>New Folder</code></li>
+</ol>
+<p><img src="media/Picture2.png" class="img-fluid"></p>
+<ol start="2" type="1">
+<li><p>El nombre de tu carpeta será el nombre de tu repositorio en GitHub (ver <a href="https://miseppi23.github.io/StartCodingToday">Curso StartCodingToday</a>). En este caso, lo nombraré <strong>HowToMakeYourGuide</strong>.</p></li>
+<li><p>Para comenzar a crear tu página web, crea un nuevo archivo <strong>.qmd</strong>. Haz clic derecho en tu carpeta recién creada y selecciona <code>New file</code>. Aquí lo llamaré <strong>HowToMakeYourGuide_Span.qmd</strong>.</p></li>
+</ol>
+<p><img src="media/Picture3.png" class="img-fluid"></p>
+<ol start="4" type="1">
+<li>Luego necesitaremos crear e inicializar un archivo .yml que contendrá la información del sitio web: el título, los paneles de la barra de navegación y las páginas web (.qmd) que configuraremos a continuación. Crea un nuevo archivo y nómbralo **_quarto.yml**</li>
+</ol>
+<p><img src="media/Picture4.png" class="img-fluid"></p>
+<ol start="5" type="1">
+<li>Escribe lo siguiente en el archivo **_quarto.yml**</li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>project:</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="bu">type</span>: website</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  output<span class="op">-</span><span class="bu">dir</span>: docs</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>website:</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  title: <span class="st">"Cómo Hacer Tu Guía"</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  navbar:</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    left:</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>      <span class="op">-</span> href: HowToMakeYourGuide_Span.qmd</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        text: Span</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="bu">format</span>:</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  html:</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    theme: cosmo</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    toc: true</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Las líneas <strong>output-dir: docs</strong> significan que los archivos que Quarto generará para nuestro sitio web se guardarán en una carpeta llamada <strong>docs</strong>. Asegúrate de que esta línea esté presente en tu archivo .yml ya que será clave para publicar tu sitio en GitHub Pages.</p>
+</div>
+</div>
+<ol start="5" type="1">
+<li>Abre tu archivo .qmd <strong>HowToMakeYourGuide_Span.qmd</strong>. Y usa el atajo de teclado <code>CTRL+SHIFT+K</code>. Este atajo debería haberse instalado junto con la extensión de Quarto y se abrirá una ventana lateral con una vista previa de tu sitio web. Esto facilitará la construcción.</li>
+</ol>
+<p><img src="media/Picture5a.png" class="img-fluid"></p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>El archivo <strong>.yml</strong> se puede actualizar en cualquier momento. Si deseas agregar una página, cambiar tu título, formato, etc. Lo gestionaremos a lo largo de la creación del sitio web.</p>
+</div>
+</div>
+</section>
+<section id="agregar-otra-página" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="agregar-otra-página"><span class="header-section-number">3.2</span> Agregar otra página</h2>
+<p>Si deseas crear otra página que estará disponible en la barra de navegación en la parte superior de tu sitio web.</p>
+<ol type="1">
+<li><p>Crea un <strong>Nuevo archivo</strong> y nómbralo de acuerdo con el contenido de tu segunda página. En este caso: <strong>HowToMakeYourGuide_Eng.qmd</strong></p></li>
+<li><p>Luego necesitarás vincularlo en tu archivo <strong>.yml</strong>.</p></li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>project:</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="bu">type</span>: website</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  output<span class="op">-</span><span class="bu">dir</span>: docs</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>website:</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  title: <span class="st">"Cómo Hacer Tu Guía"</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  navbar:</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    left:</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>      <span class="op">-</span> href: HowToMakeYourGuide_Span.qmd</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>        text: Span</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>      <span class="op">-</span> href: HowToMakeYourGuide_Eng.qmd</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>        text: Eng</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="bu">format</span>:</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  html:</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    theme: cosmo</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    toc: true</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="3" type="1">
+<li><code>CTRL+SHIFT+K</code>. Ahora puedes ver tus dos páginas en la parte superior.</li>
+</ol>
+<p><img src="media/Picture20a.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="construye-tu-página-web" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Construye tu página web</h1>
+<section id="sección-de-encabezado" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="sección-de-encabezado"><span class="header-section-number">4.1</span> Sección de encabezado</h2>
+<p>Ahora podemos construir nuestra página web.</p>
+<ol type="1">
+<li>En el archivo .qmd, primero especificaremos el título y el autor.</li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">---</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>title: <span class="st">"Cómo Hacer Tu Guía"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>author:</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="op">-</span> name: Marion Iseppi, Consultora Senior </span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="op">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La sección de encabezado en el archivo .qmd está separada por <strong>—</strong>. Asegúrate de que estén presentes y que se respeten las sangrías.</p>
+</div>
+</div>
+<ol start="2" type="1">
+<li><code>CTRL+SHIFT+K</code> debería actualizar tu vista previa</li>
+</ol>
+<p><img src="media/Picture6a.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li>Puedes agregar tantos detalles como necesites: subtítulo, fecha, especificar más sobre el autor como grado, afiliación, etc.</li>
+</ol>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="op">---</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>title: <span class="st">"Cómo Hacer Tu Guía"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>subtitle: <span class="st">"Saber Cómo Generar Informes Interactivos"</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>date: <span class="dv">6</span> June <span class="dv">2024</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>author:</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="op">-</span> name: Marion Iseppi, Consultora Senior </span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    degree: PhD</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    orcid: <span class="dv">0000</span><span class="op">-</span><span class="dv">000</span><span class="er">2</span><span class="op">-</span><span class="dv">7018</span><span class="op">-</span><span class="dv">9270</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    email: miseppi<span class="op">@</span>srk.cl</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    corresponding: true</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    affiliation: </span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>      <span class="op">-</span> name: SRK Consulting Chile SpA </span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>        url: https:<span class="op">//</span>www.srk.com<span class="op">/</span>es<span class="op">/</span>contactenos<span class="op">/</span>chile</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="op">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="estilo" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="estilo"><span class="header-section-number">4.2</span> Estilo</h2>
+<ol start="4" type="1">
+<li><p>Luego, especifiquemos el formato. Quarto tiene un formato estandarizado que se puede personalizar con un archivo .css. Un formato SRK está disponible <a href="styles/srk.css">aquí</a>.</p></li>
+<li><p>Crea una carpeta <strong>Styles</strong> en tu carpeta del repositorio y guarda el archivo <strong>srk.css</strong>.</p></li>
+<li><p>Puedes actualizar tu sección de encabezado usando las siguientes palabras clave.</p></li>
+</ol>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">---</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>title: <span class="st">"Cómo Hacer Tu Guía"</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>subtitle: <span class="st">"Saber Cómo Generar Informes Interactivos"</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>date: <span class="dv">6</span> June <span class="dv">2024</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>author:</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="op">-</span> name: Marion Iseppi, Consultora Senior </span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    degree: PhD</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    orcid: <span class="dv">0000</span><span class="op">-</span><span class="dv">000</span><span class="er">2</span><span class="op">-</span><span class="dv">7018</span><span class="op">-</span><span class="dv">9270</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    email: miseppi<span class="op">@</span>srk.cl</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    corresponding: true</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    affiliation: </span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>      <span class="op">-</span> name: SRK Consulting Chile SpA </span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>        url: https:<span class="op">//</span>www.srk.com<span class="op">/</span>es<span class="op">/</span>contactenos<span class="op">/</span>chile</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="bu">format</span>:</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>  html:</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    css: styles<span class="op">/</span>srk.css</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    echo: false</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    embed<span class="op">-</span>resources: false</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>jupyter: python3</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>toc: true</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>toc<span class="op">-</span>title: <span class="st">"Tabla de contenido"</span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>number<span class="op">-</span>sections: true</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>title<span class="op">-</span>block<span class="op">-</span>banner: true</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a><span class="op">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="7" type="1">
+<li><code>CTRL+SHIFT+K</code></li>
+</ol>
+<p><img src="media/Picture7a.png" class="img-fluid"></p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>En lugar de vincular tu archivo .css a cada página, también puedes vincularlo a tu archivo <strong>.yml</strong> de la siguiente manera:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>project:</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="bu">type</span>: website</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>website:</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  title: <span class="st">"Cómo Hacer Tu Guía"</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  navbar:</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    left:</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>      <span class="op">-</span> href: HowToMakeYourGuide_Span.qmd</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>        text: Span</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="bu">format</span>:</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  html:</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    theme: cosmo</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    toc: true</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    css: styles<span class="op">/</span>srk.css</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="autoría" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="autoría"><span class="header-section-number">4.3</span> Autoría</h2>
+<section id="encabezados-y-listas" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="encabezados-y-listas"><span class="header-section-number">4.3.1</span> Encabezados y listas</h3>
+<p>Seis niveles de encabezados están disponibles en Quarto.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Heading 1</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co">## Heading 2</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co">### Heading 3</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co">#### Heading 4</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co">##### Heading 5</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co">###### Heading 6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Se renderiza de la siguiente manera:</p>
+<p><img src="media/Picture10.png" class="img-fluid"></p>
+<ol type="1">
+<li>En tu archivo .qmd, debajo de tu sección de encabezado, ingresa el nombre de tu sección. Por ejemplo:</li>
+</ol>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Introducción</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>Los informes HTML son cada vez más populares ya que permiten una apariencia profesional rápida, incluir gráficos y mapas interactivos. </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="2" type="1">
+<li>CTRL+SHIFT+K.</li>
+</ol>
+<p><img src="media/Picture8a.png" class="img-fluid"></p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>En la sección de encabezado:</p>
+<ul>
+<li><p><strong>number-sections: true</strong> numera automáticamente todos los encabezados. Si deseas eliminarlos, cámbialo a <strong>false</strong>.</p></li>
+<li><p><strong>toc: true</strong> se refiere a la tabla de contenido. Si deseas eliminarla, cámbialo a <strong>false</strong>.</p></li>
+</ul>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Para listas, tienes varias opciones:</li>
+</ol>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="op">-</span> lista desordenada</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="op">-</span> subelemento <span class="dv">1</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="op">-</span> subelemento <span class="dv">2</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="op">-</span> elemento <span class="dv">2</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="fl">1.</span> lista ordenada</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="fl">2.</span> elemento <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Se renderiza como:</p>
+<p><img src="media/Picture14a.png" class="img-fluid"></p>
+</section>
+<section id="formato-de-texto" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="formato-de-texto"><span class="header-section-number">4.3.2</span> Formato de texto</h3>
+<p>Puedes formatear tu texto fácilmente usando lo siguiente:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="op">*</span>italics<span class="op">*</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="op">**</span>bold<span class="op">**</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="op">***</span>bold italics<span class="op">***</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>superscript <span class="op">^</span><span class="dv">2</span><span class="op">^</span> <span class="op">/</span> subscript <span class="op">~</span><span class="dv">2</span><span class="op">~</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="op">~~</span>strikethrough<span class="op">~~</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>`verbatim code`</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Estos se mostrarán de la siguiente manera:</p>
+<p><img src="media/Picture18.png" class="img-fluid"></p>
+</section>
+<section id="notas" class="level3" data-number="4.3.3">
+<h3 data-number="4.3.3" class="anchored" data-anchor-id="notas"><span class="header-section-number">4.3.3</span> Notas</h3>
+<p>Puedes agregar notas a lo largo de tu sitio para una mejor comprensión usando <strong>callout</strong>.</p>
+<ol type="1">
+<li>Escribe callout en tu archivo. Con la extensión de Quarto, te propondrá una lista de posibilidades. Intenta y selecciona <strong>callout-note</strong>.</li>
+</ol>
+<p><video src="media/clip1.mp4" class="img-fluid" loop="true" muted="true" autoplay="true" controls=""><a href="media/clip1.mp4">Video</a></video></p>
+<ol start="2" type="1">
+<li>Escribe tu nota dentro de los <strong>:::</strong></li>
+</ol>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>::: {.callout<span class="op">-</span>note}</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>Documentación extensa está disponible [en línea](https:<span class="op">//</span>quarto.org<span class="op">/</span>docs<span class="op">/</span>guide<span class="op">/</span>). </span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="3" type="1">
+<li>Presiona <code>CTRL+SHIFT+K</code>.</li>
+</ol>
+<p><img src="media/Picture19a.png" class="img-fluid"></p>
+</section>
+<section id="enlaces-e-imágenes" class="level3" data-number="4.3.4">
+<h3 data-number="4.3.4" class="anchored" data-anchor-id="enlaces-e-imágenes"><span class="header-section-number">4.3.4</span> Enlaces e imágenes</h3>
+<p>La misma sintaxis se puede usar para hipervínculos, enlaces, imágenes o incluso clips de video cortos.</p>
+<div class="callout-important callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Luego usaremos GitHub Pages para publicar nuestro sitio web. GitHub no permite archivos que excedan los 100Mb. Asegúrate de que todos los archivos relacionados con tu sitio web, incluidos los archivos descargables, estén por debajo de la limitación.</p>
+</div>
+</div>
+<ol type="1">
+<li>Para hipervínculos, usa la siguiente sintaxis. Se puede usar dentro del texto y actuará como un hipervínculo al sitio web en cuestión.</li>
+</ol>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>Dashboard Power BI se usa comúnmente dentro de SRK ([Conceptos básicos <span class="kw">del</span> Dashboard](https:<span class="op">//</span>learn.microsoft.com<span class="op">/</span>en<span class="op">-</span>us<span class="op">/</span>power<span class="op">-</span>bi<span class="op">/</span>create<span class="op">-</span>reports<span class="op">/</span>service<span class="op">-</span>dashboards)), es muy útil especialmente para monitorear proyectos.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Se mostrará como:</p>
+<p><img src="media/Picture11a.png" class="img-fluid"></p>
+<ol start="2" type="1">
+<li><p>Crea una carpeta en tu repositorio llamada <strong>media</strong>. Aquí es donde guardarás todas las imágenes que deseas mostrar en tu sitio web.</p></li>
+<li><p>Para imágenes locales, usa la misma sintaxis. También puedes optar por dejar el pie de foto vacío. También puedes especificar las dimensiones de la imagen usando <strong>{}</strong>.</p></li>
+</ol>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>[](media<span class="op">/</span>Picture1.png)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este caso, se mostrará como:</p>
+<p><img src="media/Picture12a.png" class="img-fluid"></p>
+<ol start="4" type="1">
+<li>Usa la misma sintaxis para mostrar un video. También puedes agregar especificaciones como silenciado, bucle, dimensiones con <strong>{}</strong>.</li>
+</ol>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>[](media<span class="op">/</span>clip1.mp4){loop<span class="op">=</span>true muted<span class="op">=</span>true autoplay<span class="op">=</span>true}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="tablas" class="level3" data-number="4.3.5">
+<h3 data-number="4.3.5" class="anchored" data-anchor-id="tablas"><span class="header-section-number">4.3.5</span> Tablas</h3>
+<p>La sintaxis para las tablas es la siguiente:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="op">|</span>Column <span class="dv">1</span><span class="op">|</span>Column <span class="dv">2</span><span class="op">|</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="op">|-|-|</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="op">|</span>R1C1<span class="op">|</span>R1C2<span class="op">|</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="op">|</span>R2C1<span class="op">|</span>R2C2<span class="op">|</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Se mostrará como:</p>
+<p><img src="media/Picture16.png" class="img-fluid"></p>
+<p>También puedes especificar las dimensiones de tu tabla agregando:</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="op">|</span>Column <span class="dv">1</span><span class="op">|</span>Column <span class="dv">2</span><span class="op">|</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="op">|-|-|</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="op">|</span>R1C1<span class="op">|</span>R1C2<span class="op">|</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="op">|</span>R2C1<span class="op">|</span>R2C2<span class="op">|</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>: {tbl<span class="op">-</span>colwidths<span class="op">=</span><span class="st">"[25,60]"</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Se muestra como:</p>
+<p><img src="media/Picture17.png" class="img-fluid"></p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Como la construcción de una tabla en Quarto puede llevar mucho tiempo, si ya tienes una tabla en <strong>Word</strong> o <strong>Excel</strong> puedes copiarla y pegarla en <a href="https://chat.srk.global/">srkCHAT</a> y pedirle que la transforme en formato markdown.</p>
+<p><img src="media/Picture9.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="incluir-celdas-de-python" class="level3" data-number="4.3.6">
+<h3 data-number="4.3.6" class="anchored" data-anchor-id="incluir-celdas-de-python"><span class="header-section-number">4.3.6</span> Incluir celdas de Python</h3>
+<p>En tus informes, es posible que desees mostrar características interactivas. Puedes incluirlas directamente en tu archivo <strong>.qmd</strong>. Ingresa tu script de la siguiente manera y especifica el lenguaje, en este caso, Python.</p>
+<p><img src="media/Picture21a.png" class="img-fluid"></p>
+<p>Se renderizará de la siguiente manera:</p>
+<div class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
 
+<div>                            <div id="a9bfd239-3669-4b34-90e3-f2b446d32133" class="plotly-graph-div" style="height:525px; width:100%;"></div>            <script type="text/javascript">                require(["plotly"], function(Plotly) {                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("a9bfd239-3669-4b34-90e3-f2b446d32133")) {                    Plotly.newPlot(                        "a9bfd239-3669-4b34-90e3-f2b446d32133",                        [{"marker":{"color":"hotpink","line":{"width":0.5}},"name":"Datos de Muestra","x":[0.4967141530112327,-0.13826430117118466,0.6476885381006925,1.5230298564080254,-0.23415337472333597,-0.23413695694918055,1.5792128155073915,0.7674347291529088,-0.4694743859349521,0.5425600435859647,-0.46341769281246226,-0.46572975357025687,0.24196227156603412,-1.913280244657798,-1.7249178325130328,-0.5622875292409727,-1.0128311203344238,0.3142473325952739,-0.9080240755212109,-1.4123037013352915,1.465648768921554,-0.22577630048653566,0.06752820468792384,-1.4247481862134568,-0.5443827245251827,0.11092258970986608,-1.1509935774223028,0.37569801834567196,-0.600638689918805,-0.2916937497932768,-0.6017066122293969,1.8522781845089378,-0.013497224737933921,-1.0577109289559004,0.822544912103189,-1.2208436499710222,0.2088635950047554,-1.9596701238797756,-1.3281860488984305,0.19686123586912352,0.7384665799954104,0.1713682811899705,-0.11564828238824053,-0.3011036955892888,-1.4785219903674274,-0.7198442083947086,-0.4606387709597875,1.0571222262189157,0.3436182895684614,-1.763040155362734,0.324083969394795,-0.38508228041631654,-0.6769220003059587,0.6116762888408679,1.030999522495951,0.9312801191161986,-0.8392175232226385,-0.3092123758512146,0.33126343140356396,0.9755451271223592,-0.47917423784528995,-0.18565897666381712,-1.1063349740060282,-1.1962066240806708,0.812525822394198,1.356240028570823,-0.07201012158033385,1.0035328978920242,0.36163602504763415,-0.6451197546051243,0.36139560550841393,1.5380365664659692,-0.03582603910995154,1.5646436558140062,-2.6197451040897444,0.8219025043752238,0.08704706823817122,-0.29900735046586746,0.0917607765355023,-1.9875689146008928,-0.21967188783751193,0.3571125715117464,1.477894044741516,-0.5182702182736474,-0.8084936028931876,-0.5017570435845365,0.9154021177020741,0.32875110965968446,-0.5297602037670388,0.5132674331133561,0.09707754934804039,0.9686449905328892,-0.7020530938773524,-0.3276621465977682,-0.39210815313215763,-1.4635149481321186,0.29612027706457605,0.26105527217988933,0.00511345664246089,-0.23458713337514692,-1.4153707420504142,-0.42064532276535904,-0.3427145165267695,-0.8022772692216189,-0.16128571166600914,0.4040508568145384,1.8861859012105302,0.17457781283183896,0.25755039072276437,-0.07444591576616721,-1.9187712152990415,-0.026513875449216878,0.06023020994102644,2.463242112485286,-0.19236096478112252,0.30154734233361247,-0.03471176970524331,-1.168678037619532,1.1428228145150205,0.7519330326867741,0.7910319470430469,-0.9093874547947389,1.4027943109360992,-1.4018510627922809,0.5868570938002703,2.1904556258099785,-0.9905363251306883,-0.5662977296027719,0.09965136508764122,-0.5034756541161992,-1.5506634310661327,0.06856297480602733,-1.0623037137261049,0.4735924306351816,-0.9194242342338032,1.5499344050175394,-0.7832532923362371,-0.3220615162056756,0.8135172173696698,-1.2308643164339552,0.22745993460412942,1.307142754282428,-1.6074832345612275,0.1846338585323042,0.25988279424842353,0.7818228717773104,-1.236950710878082,-1.3204566130842763,0.5219415656168976,0.29698467323318606,0.25049285034587654,0.3464482094969757,-0.6800247215784908,0.23225369716100355,0.29307247329868125,-0.7143514180263678,1.8657745111447566,0.4738329209117875,-1.1913034972026486,0.6565536086338297,-0.9746816702273214,0.787084603742452,1.158595579007404,-0.8206823183517105,0.9633761292443218,0.4127809269364983,0.82206015999449,1.8967929826539474,-0.2453881160028705,-0.7537361643574896,-0.8895144296255233,-0.8158102849654383,-0.0771017094141042,0.3411519748166439,0.27669079933001905,0.8271832490360238,0.01300189187790702,1.4535340771573169,-0.2646568332379561,2.720169166589619,0.6256673477650062,-0.8571575564162826,-1.0708924980611123,0.4824724152431853,-0.2234627853258509,0.714000494092092,0.47323762457354485,-0.07282891265687277,-0.846793718068405,-1.5148472246858646,-0.4465149520670211,0.8563987943234723,0.21409374413020396,-1.245738778711988,0.173180925851182,0.3853173797288368,-0.883857436201133,0.1537251059455279,0.058208718445999896,-1.142970297830623,0.3577873603482833,0.5607845263682344,1.083051243175277,1.053802052034903,-1.377669367957091,-0.9378250399151228,0.5150352672086598,0.5137859509122088,0.5150476863060479,3.852731490654721,0.570890510693167,1.135565640180599,0.9540017634932023,0.651391251305798,-0.3152692446403456,0.7589692204932674,-0.7728252145375718,-0.23681860674000887,-0.48536354782910346,0.08187413938632256,2.3146585666735087,-1.867265192591748,0.6862601903745135,-1.6127158711896517,-0.47193186578943347,1.088950596967366,0.06428001909546277,-1.0777447779293061,-0.7153037092599682,0.6795977489346758,-0.7303666317171367,0.21645858958197486,0.045571839903813784,-0.6516003476058171,2.1439440893253257,0.6339190223180112,-2.025142586657607,0.18645431476942764,-0.661786464768388,0.852433334796224,-0.7925207384327007,-0.11473644146689901,0.5049872789804571,0.8657551941701215,-1.2002964070557762,-0.3345012358409484,-0.4749453111609562,-0.6533292325737119,1.7654542402810969,0.40498171096095553,-1.2608839543350452,0.9178619470547761,2.1221561970126332,1.0324652605511468,-1.5193699659540134,-0.48423407286625136,1.2669111491866227,-0.7076694656187807,0.44381942814622843,0.7746340534293368,-0.926930471578083,-0.05952535606180008,-3.2412673400690726,-1.0243876413342898,-0.2525681513931603,-1.2477831819648495,1.6324113039316352,-1.4301413779606327,-0.44004448669698376,0.13074057728609134,1.4412732890661155,-1.4358621511794394,1.1631637521549596,0.010233061019587049,-0.9815086510479509,0.46210347426327075,0.19905969557347003,-0.6002168771587947,0.06980208499001891,-0.3853135968617602,0.11351734525124804,0.6621306745210467,1.586016816145352,-1.237815498826849,2.1330333746562666,-1.9520877995225019,-0.15178509503558332,0.5883172064845765,0.28099186773503265,-0.6226995198205938,-0.20812225035727522,-0.4930009346588328,-0.5893647569442115,0.8496020970210246,0.35701548596504734,-0.6929095952606542,0.8995998754332507,0.30729952087660933,0.8128621188389601,0.6296288419236122,-0.8289950109220723,-0.5601810401969696,0.7472936051232618,0.6103702654334648,-0.020901593964148132,0.117327383308782,1.277664895788425,-0.5915713888358299,0.5470973811700379,-0.20219265243389406,-0.2176812032272203,1.09877685198719,0.8254163489880298,0.8135096360006385,1.305478807154329,0.02100384163275905,0.6819529712949639,-0.31026675659345604,0.3241663524884421,-0.13014305436768459,0.09699596499271819,0.5951570254369136,-0.8182206832334725,2.0923872756854602,-1.006017381499702,-1.2141886127877322,1.1581108735000678,0.7916626939629359,0.6241198170521551,0.6283455092642799,-0.012246772846914623,-0.8972543714858315,0.07580455819372633,-0.6771617115121117,0.9751197334177512,-0.14705738150213865,-0.8254971967925115,-0.32138584165299344,0.41293145427562433,-0.5637245528039747,-0.8222203955664315,0.2436872114919123,0.24496657110872277,-0.5069431753711298,-0.4710383056183228,0.2320499373576363,-1.4480843414973241,-1.4074637743765552,-0.718444221252436,-0.21344715171184725,0.3109075655980046,1.475356216949552,0.8576596232020194,-0.1599385299634271,-0.01901620790268883,-1.0025293646378088,-0.01851313599238993,-0.2886586389201383,0.3227185603380895,-0.827230943552323,0.5193465142411723,1.5327389130025777,-0.1087601484568576,0.40171172209894146,0.6901439917111125,-0.40122047188583626,0.22409248181041677,0.01259240078179486,0.09767609854883172,-0.7730097838554665,0.024510174258942714,0.49799829124544975,1.4511436077950417,0.9592708260852069,2.1531824575115563,-0.7673475628880495,0.8723206367206782,0.18334200573835174,2.1898029332176723,-0.8082982853551515,-0.8397218421807761,-0.5993926454440222,-2.123895724309807,-0.525755021680761,-0.759132661553698,0.15039378647620763,0.34175597577715944,1.8761708392158862,0.9504238381860503,-0.5769036556624031,-0.898414671348358,0.4919191715065057,-1.3202332070206422,1.8314587658543537,1.179440120721287,-0.4691756521047048,-1.7131345290908775,1.3538723741654128,-0.11453984525261789,1.2378163119734618,-1.594427658794367,-0.5993750229537729,0.005243699718183166,0.046980593764742055,-0.45006547147924364,0.6228499323474987,-1.0676204293825944,-0.1423794850212935,0.12029563171189886,0.514438834058749,0.7116148780888898,-1.1246420918378692,-1.5341141707356223,1.277676821898509,0.33231401197959165,-0.7484865365565536,1.551151975522523,0.11567463429285867,1.1792971840638264,0.06751848141010895,2.060747924881987,1.7553408424432044,-0.2489641484790735,0.9715709509543554,0.6453759495851475,1.3686315575323487,-0.9649234605801045,0.6860514599984393,1.0584244868495878,-1.7587394864231143,-1.183258512665775,-2.0392321777601006,-0.26940683444455776,0.7175422557959623,1.502357052096028,0.07409478041977519,1.6286155455712918,-1.3801014582148914,-1.7033824393551547,-0.05554769889661878,0.3840654489393073,-0.03269474809409311,-2.0674421000398766,-0.08912003951278841,-1.3044695005048532,0.6696725488300385,0.36659824609684827,-0.9398797863273552,-0.5138669173366935,-1.0592135218889516,-0.06267909727317188,0.9551423205012383,-0.9857260463355437,0.5040465155178444,-0.5302576183724408,-0.7928728322623442,-0.10703035995455783,-1.035242322419374,-0.553649305347182,-1.1978778925888485,1.9647251329163893,0.03526355197172861,-0.6997255079925856,0.213979910734222,-0.11232804969082982,-0.22096959953322298,0.6141667000434252,0.7575077100473051,-0.5305011476105275,-0.57581824064468,-0.275051697151644,-2.301921164735585,-1.5151910621985523,1.3668742674445247,1.6449677135012837,-0.24903603955637832,0.5765569630557664,0.3112501545435361,3.0788808084552377,1.1195749114345768,-0.12791759148076653,-0.9555404406004258,-1.6064463202575725,0.2034636358672231,-0.7563507452843033,-1.4222537095976742,-0.6465728842425266,-1.081548003614395,1.6871416350725648,0.8816397569494505,-0.007972641316617372,1.4799441388900259,0.0773683076476183,-0.8612842013282637,1.5231240772696573,0.5389100436846587,-1.0372461543264564,-0.1903386780836082,-0.8756182533847572,-1.382799730964336],"type":"histogram"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"title":{"text":"Histograma usando Plotly"},"xaxis":{"title":{"text":"Valor"}},"yaxis":{"title":{"text":"Frecuencia"}}},                        {"responsive": true}                    ).then(function(){
+                            
+var gd = document.getElementById('a9bfd239-3669-4b34-90e3-f2b446d32133');
+var x = new MutationObserver(function (mutations, observer) {{
+        var display = window.getComputedStyle(gd).display;
+        if (!display || display === 'none') {{
+            console.log([gd, 'removed!']);
+            Plotly.purge(gd);
+            observer.disconnect();
+        }}
+}});
+
+// Listen for the removal of the full notebook cells
+var notebookContainer = gd.closest('#notebook-container');
+if (notebookContainer) {{
+    x.observe(notebookContainer, {childList: true});
+}}
+
+// Listen for the clearing of the current output cell
+var outputEl = gd.closest('.output');
+if (outputEl) {{
+    x.observe(outputEl, {childList: true});
+}}
+
+                        })                };                });            </script>        </div>
+</div>
+</div>
+</section>
+<section id="mostrar-bloque-de-código-delimitado" class="level3" data-number="4.3.7">
+<h3 data-number="4.3.7" class="anchored" data-anchor-id="mostrar-bloque-de-código-delimitado"><span class="header-section-number">4.3.7</span> Mostrar bloque de código delimitado</h3>
+<p>Es posible que desees incluir bloques de celdas sin ejecutarlos. En este caso, agrega un <strong>.</strong> antes de <strong>python</strong>.</p>
+<p><img src="media/Picture22a.png" class="img-fluid"></p>
+<p>Y se renderizará de la siguiente manera:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.graph_objects <span class="im">as</span> go</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Generar datos de muestra</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>np.random.seed(<span class="dv">42</span>)</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> np.random.randn(<span class="dv">500</span>)</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear un histograma</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> go.Figure()</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Agregar traza para el histograma</span></span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>fig.add_trace(go.Histogram(</span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span>data,</span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>    name<span class="op">=</span><span class="st">'Datos de Muestra'</span>,</span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>    marker<span class="op">=</span><span class="bu">dict</span>(color<span class="op">=</span><span class="st">'hotpink'</span>, line<span class="op">=</span><span class="bu">dict</span>(width<span class="op">=</span><span class="fl">0.5</span>))</span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Personalizar diseño</span></span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a>fig.update_layout(</span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a>    title<span class="op">=</span><span class="st">'Histograma usando Plotly'</span>,</span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a>    xaxis_title<span class="op">=</span><span class="st">'Valor'</span>,</span>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a>    yaxis_title<span class="op">=</span><span class="st">'Frecuencia'</span>,</span>
+<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a>    template<span class="op">=</span><span class="st">'plotly_white'</span></span>
+<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb17-25"><a href="#cb17-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-26"><a href="#cb17-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Mostrar el gráfico</span></span>
+<span id="cb17-27"><a href="#cb17-27" aria-hidden="true" tabindex="-1"></a>fig.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+</section>
+<section id="agrega-tu-repositorio-a-github" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Agrega tu repositorio a GitHub</h1>
+<ol type="1">
+<li>Abre <strong>GitHub Desktop</strong> y ve a Archivo &gt; Nuevo Repositorio. Ingresa la ruta local a tu repositorio:</li>
+</ol>
+<p><img src="media/Picture23.png" class="img-fluid"></p>
+<ol start="2" type="1">
+<li>Desmarca <strong>Keep this code private</strong> y haz clic en <strong>Publish repository</strong> en la ventana principal de GitHub Desktop.</li>
+</ol>
+<p><img src="media/Picture24.png" class="img-fluid"></p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Para usar GitHub Pages para publicar tu sitio web, tu código tendrá que ser público. Si deseas restringir el acceso a tu sitio web, puedes usar una versión paga de <strong>GitHub Enterprise</strong>.</p>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Si vas a la pestaña <strong>History</strong>, puedes cambiar lo que se ha publicado. Deberías ver todo tu repositorio.</li>
+</ol>
+<p><img src="media/Picture25.png" class="img-fluid"></p>
+<ol start="4" type="1">
+<li>Ahora ve a tu cuenta en <a href="https://github.com/">GitHub</a>, haz clic en tu imagen de perfil de usuario, repositorio:</li>
+</ol>
+<p><img src="media/Picture26.png" class="img-fluid"></p>
+</section>
+<section id="publicar-en-github" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Publicar en GitHub</h1>
+<section id="prepara-tu-proyecto-para-github" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="prepara-tu-proyecto-para-github"><span class="header-section-number">6.1</span> Prepara tu proyecto para GitHub</h2>
+<p>Ahora que has creado tus páginas y que tu repositorio ha sido publicado en GitHub, desplegaremos tu sitio web usando <strong>GitHub Pages</strong>.</p>
+<ol type="1">
+<li>En tu terminal ingresa:</li>
+</ol>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>quarto render</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Puedes ver que ha creado una carpeta <strong>docs</strong> en la raíz de tu repositorio.</p>
+<p><img src="media/Picture27.png" class="img-fluid"></p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Si aún estás visualizando la vista previa de tu sitio web usando <code>CTRL+SHIFT+K</code>, notarás que tu terminal está ocupada. Para detener el comando, haz clic en tu terminal y usa <code>CTRL+C</code>.</p>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Ve a la pestaña <code>CONTROL DE FUENTES</code> en la barra lateral izquierda de VS Code. Verás que hay varios cambios almacenados. Los vas a confirmar en GitHub.</li>
+</ol>
+<p><img src="media/Picture28.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li>Haz clic en el signo <strong>+</strong> <strong>Stage All Changes</strong> y <strong>COMMIT</strong>. Se abrirá una ventana <strong>COMMIT_EDITMSG</strong>. En la primera línea, ingresa una breve descripción de los cambios. Luego guarda y cierra la ventana.</li>
+</ol>
+<p><img src="media/Picture29.png" class="img-fluid"></p>
+<ol start="4" type="1">
+<li>Luego haz clic en <strong>Sync Changes</strong>. Una ventana te advertirá que VS Code va a enviar los cambios a GitHub, haz clic en <strong>OK</strong>.</li>
+</ol>
+<p><img src="media/Picture30.png" class="img-fluid"></p>
+</section>
+<section id="github-pages" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="github-pages"><span class="header-section-number">6.2</span> GitHub Pages</h2>
+<ol type="1">
+<li>Ve a tu repositorio en línea y haz clic en el recién publicado. Luego en la barra superior ve a <strong>Settings</strong>.</li>
+</ol>
+<p><img src="media/Picture31.png" class="img-fluid"></p>
+<ol start="2" type="1">
+<li>En <strong>Settings</strong>, haz clic en <strong>Pages</strong> que se encuentra en la barra de navegación izquierda.</li>
+</ol>
+<p><img src="media/Picture32.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li>En Pages, especifica la rama a <strong>main</strong> y la carpeta a <strong>/docs</strong>. Luego haz clic en <code>Save</code>. Deberías ver aparecer una banda azul <em>GitHub Pages saved</em>.</li>
+</ol>
+<p><img src="media/Picture33.png" class="img-fluid"></p>
+<ol start="4" type="1">
+<li>Actualiza tu página, ahora deberías ver un enlace a tu sitio web construido como sigue: <strong>https://tu-usuario.github.io/tu-nombre-del-repositorio</strong>. Ve a tu sitio web.</li>
+</ol>
+<p><img src="media/Picture34.png" class="img-fluid"></p>
+<center>
+<div style="font-size: 150%; color:darkorange">
+<b>¡Está hecho!</b>
+</div>
+</center>
+<p><img src="media/Picture35.png" class="img-fluid"></p>
+
+
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

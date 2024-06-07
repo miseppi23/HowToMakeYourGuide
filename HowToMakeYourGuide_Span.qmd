@@ -1,0 +1,564 @@
+---
+title: "Cómo Hacer Tu Guía"
+subtitle: "Saber Cómo Generar Informes Interactivos"
+date: 6 June 2024
+author:
+  - name: Marion Iseppi, Consultora Senior 
+    degree: PhD
+    orcid: 0000-0002-7018-9270
+    email: miseppi@srk.cl
+    corresponding: true
+    affiliation: 
+      - name: SRK Consulting Chile SpA 
+        url: https://www.srk.com/es/contactenos/chile
+format: 
+  html:
+    css: styles/srk.css
+    echo: false
+    embed-resources: false
+jupyter: python3
+toc: true
+toc-title: "Tabla de contenido"
+number-sections: true
+title-block-banner: true
+---
+
+# Introducción
+
+Los informes HTML son cada vez más populares ya que permiten una apariencia profesional rápida, incluir gráficos y mapas interactivos. 
+Dashboard Power BI se usa comúnmente dentro de SRK ([Conceptos básicos del Dashboard](https://learn.microsoft.com/en-us/power-bi/create-reports/service-dashboards)), es muy útil especialmente para monitorear proyectos.
+
+Pero los informes HTML tienen varias ventajas:
+
+- accesibles desde cualquier máquina (computadora, tabletas, teléfono)
+- actualízalo sobre la marcha, así te aseguras de que el cliente siempre esté usando la última versión
+- puedes incluir fácilmente una opción para descargar tu informe como un documento pdf, word o powerpoint ya que los clientes suelen usar nuestras figuras para sus propios informes internos
+
+# Configura tu entorno
+
+## Instalar Quarto
+
+**Quarto** es un sistema de publicación científica y técnica de código abierto diseñado para crear documentos, informes, presentaciones y sitios web de alta calidad. Se integra perfectamente con herramientas y lenguajes como R, Python y Jupyter, lo que permite a los autores combinar texto, código y visualizaciones en un solo documento.
+
+1. Instala Quarto en tu máquina. Ve a [aquí](https://quarto.org/docs/get-started/). Tendrás que reiniciar tu máquina.
+
+::: {.callout-note}
+Documentación extensa está disponible [en línea](https://quarto.org/docs/guide/). 
+:::
+
+## Instalar extensiones
+
+Para usar **Quarto** con VS Code, necesitaremos instalar la extensión.
+
+1. Ve a la barra lateral en VS Code y selecciona ``Extensiones`` o `CTRL+X`.
+2. Busca Quarto e instala la extensión. 
+
+![](media/Picture1.png)
+
+# Configura tu sitio web
+
+## Configura tu página principal
+
+1. Ve a la ventana **Explorer**, haz clic derecho y selecciona `New Folder`
+
+![](media/Picture2.png)
+
+2. El nombre de tu carpeta será el nombre de tu repositorio en GitHub (ver [Curso StartCodingToday](https://miseppi23.github.io/StartCodingToday)). En este caso, lo nombraré **HowToMakeYourGuide**.
+
+3. Para comenzar a crear tu página web, crea un nuevo archivo **.qmd**. Haz clic derecho en tu carpeta recién creada y selecciona `New file`. Aquí lo llamaré **HowToMakeYourGuide_Span.qmd**.
+
+![](media/Picture3.png)
+
+4. Luego necesitaremos crear e inicializar un archivo .yml que contendrá la información del sitio web: el título, los paneles de la barra de navegación y las páginas web (.qmd) que configuraremos a continuación. Crea un nuevo archivo y nómbralo **_quarto.yml**
+
+![](media/Picture4.png)
+
+5. Escribe lo siguiente en el archivo **_quarto.yml**
+
+```{.python}
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Cómo Hacer Tu Guía"
+  navbar:
+    left:
+      - href: HowToMakeYourGuide_Span.qmd
+        text: Span
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+```
+::: {.callout-important}
+Las líneas **output-dir: docs** significan que los archivos que Quarto generará para nuestro sitio web se guardarán en una carpeta llamada **docs**. 
+Asegúrate de que esta línea esté presente en tu archivo .yml ya que será clave para publicar tu sitio en GitHub Pages.
+:::
+
+5. Abre tu archivo .qmd **HowToMakeYourGuide_Span.qmd**. Y usa el atajo de teclado ``CTRL+SHIFT+K``. Este atajo debería haberse instalado junto con la extensión de Quarto y se abrirá una ventana lateral con una vista previa de tu sitio web. Esto facilitará la construcción.
+
+![](media/Picture5a.png)
+
+:::::: {.callout-note}
+El archivo **.yml** se puede actualizar en cualquier momento. Si deseas agregar una página, cambiar tu título, formato, etc. Lo gestionaremos a lo largo de la creación del sitio web.
+:::
+
+## Agregar otra página
+
+Si deseas crear otra página que estará disponible en la barra de navegación en la parte superior de tu sitio web.
+
+1. Crea un **Nuevo archivo** y nómbralo de acuerdo con el contenido de tu segunda página. En este caso: **HowToMakeYourGuide_Eng.qmd**
+
+2. Luego necesitarás vincularlo en tu archivo **.yml**.
+
+```{.python}
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Cómo Hacer Tu Guía"
+  navbar:
+    left:
+      - href: HowToMakeYourGuide_Span.qmd
+        text: Span
+      - href: HowToMakeYourGuide_Eng.qmd
+        text: Eng
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+```
+
+3. ```CTRL+SHIFT+K```. Ahora puedes ver tus dos páginas en la parte superior.
+
+![](media/Picture20a.png)
+
+# Construye tu página web
+
+## Sección de encabezado
+
+Ahora podemos construir nuestra página web.
+
+1. En el archivo .qmd, primero especificaremos el título y el autor.
+
+```{.python}
+---
+title: "Cómo Hacer Tu Guía"
+author:
+  - name: Marion Iseppi, Consultora Senior 
+---
+```
+
+::: {.callout-note}
+La sección de encabezado en el archivo .qmd está separada por **---**. Asegúrate de que estén presentes y que se respeten las sangrías.
+:::
+
+2. `CTRL+SHIFT+K` debería actualizar tu vista previa
+
+![](media/Picture6a.png)
+
+3. Puedes agregar tantos detalles como necesites: subtítulo, fecha, especificar más sobre el autor como grado, afiliación, etc.
+
+```{.python}
+---
+title: "Cómo Hacer Tu Guía"
+subtitle: "Saber Cómo Generar Informes Interactivos"
+date: 6 June 2024
+author:
+  - name: Marion Iseppi, Consultora Senior 
+    degree: PhD
+    orcid: 0000-0002-7018-9270
+    email: miseppi@srk.cl
+    corresponding: true
+    affiliation: 
+      - name: SRK Consulting Chile SpA 
+        url: https://www.srk.com/es/contactenos/chile
+---
+```
+
+## Estilo
+
+4. Luego, especifiquemos el formato. Quarto tiene un formato estandarizado que se puede personalizar con un archivo .css. Un formato SRK está disponible [aquí](styles/srk.css).
+
+5. Crea una carpeta **Styles** en tu carpeta del repositorio y guarda el archivo **srk.css**.
+
+6. Puedes actualizar tu sección de encabezado usando las siguientes palabras clave.
+
+```{.python}
+---
+title: "Cómo Hacer Tu Guía"
+subtitle: "Saber Cómo Generar Informes Interactivos"
+date: 6 June 2024
+author:
+  - name: Marion Iseppi, Consultora Senior 
+    degree: PhD
+    orcid: 0000-0002-7018-9270
+    email: miseppi@srk.cl
+    corresponding: true
+    affiliation: 
+      - name: SRK Consulting Chile SpA 
+        url: https://www.srk.com/es/contactenos/chile
+format:
+  html:
+    css: styles/srk.css
+    echo: false
+    embed-resources: false
+jupyter: python3
+toc: true
+toc-title: "Tabla de contenido"
+number-sections: true
+title-block-banner: true
+---
+```
+
+7. ``CTRL+SHIFT+K``
+
+![](media/Picture7a.png)
+
+::: {.callout-tip}
+En lugar de vincular tu archivo .css a cada página, también puedes vincularlo a tu archivo **.yml** de la siguiente manera:
+
+```{.python}
+project:
+  type: website
+
+website:
+  title: "Cómo Hacer Tu Guía"
+  navbar:
+    left:
+      - href: HowToMakeYourGuide_Span.qmd
+        text: Span
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    css: styles/srk.css
+```
+
+:::
+
+## Autoría
+
+### Encabezados y listas
+
+Seis niveles de encabezados están disponibles en Quarto.
+
+```{.python}
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+```
+Se renderiza de la siguiente manera:
+
+![](media/Picture10.png)
+
+1. En tu archivo .qmd, debajo de tu sección de encabezado, ingresa el nombre de tu sección. Por ejemplo:
+
+```{.python}
+# Introducción
+
+Los informes HTML son cada vez más populares ya que permiten una apariencia profesional rápida, incluir gráficos y mapas interactivos. 
+```
+
+2. CTRL+SHIFT+K. 
+
+![](media/Picture8a.png)
+
+::: {.callout-tip}
+En la sección de encabezado:
+
+- **number-sections: true** numera automáticamente todos los encabezados. Si deseas eliminarlos, cámbialo a **false**.
+
+- **toc: true** se refiere a la tabla de contenido. Si deseas eliminarla, cámbialo a **false**.
+:::
+
+3. Para listas, tienes varias opciones:
+
+
+```{.python}
+- lista desordenada
+  - subelemento 1
+  - subelemento 2
+- elemento 2
+
+1. lista ordenada
+2. elemento 2
+```
+
+Se renderiza como:
+
+![](media/Picture14a.png)
+
+### Formato de texto
+
+Puedes formatear tu texto fácilmente usando lo siguiente:
+
+```{.python}
+*italics*
+
+**bold**
+
+***bold italics***
+
+superscript ^2^ / subscript ~2~
+
+~~strikethrough~~
+
+`verbatim code`
+```
+
+Estos se mostrarán de la siguiente manera:
+
+![](media/Picture18.png)
+
+### Notas
+
+Puedes agregar notas a lo largo de tu sitio para una mejor comprensión usando **callout**.
+
+1. Escribe callout en tu archivo. Con la extensión de Quarto, te propondrá una lista de posibilidades. Intenta y selecciona **callout-note**.
+
+![](media/clip1.mp4){loop=true muted=true autoplay=true}
+
+2. Escribe tu nota dentro de los **:::**
+
+```{.python}
+::: {.callout-note}
+Documentación extensa está disponible [en línea](https://quarto.org/docs/guide/). 
+:::
+```
+
+3. Presiona ```CTRL+SHIFT+K```.
+
+![](media/Picture19a.png)
+
+### Enlaces e imágenes
+
+La misma sintaxis se puede usar para hipervínculos, enlaces, imágenes o incluso clips de video cortos.
+
+::: {.callout-important}
+Luego usaremos GitHub Pages para publicar nuestro sitio web. 
+GitHub no permite archivos que excedan los 100Mb. Asegúrate de que todos los archivos relacionados con tu sitio web, incluidos los archivos descargables, estén por debajo de la limitación.
+:::
+
+1. Para hipervínculos, usa la siguiente sintaxis. Se puede usar dentro del texto y actuará como un hipervínculo al sitio web en cuestión.
+
+```{.python}
+Dashboard Power BI se usa comúnmente dentro de SRK ([Conceptos básicos del Dashboard](https://learn.microsoft.com/en-us/power-bi/create-reports/service-dashboards)), es muy útil especialmente para monitorear proyectos.
+```
+Se mostrará como:
+
+![](media/Picture11a.png)
+
+2. Crea una carpeta en tu repositorio llamada **media**. Aquí es donde guardarás todas las imágenes que deseas mostrar en tu sitio web.
+
+3. Para imágenes locales, usa la misma sintaxis. También puedes optar por dejar el pie de foto vacío. También puedes especificar las dimensiones de la imagen usando **{}**.
+
+```{.python}
+![](media/Picture1.png)
+```
+En este caso, se mostrará como:
+
+![](media/Picture12a.png)
+
+4. Usa la misma sintaxis para mostrar un video. También puedes agregar especificaciones como silenciado, bucle, dimensiones con **{}**.
+
+```{.python}
+![](media/clip1.mp4){loop=true muted=true autoplay=true}
+``` 
+
+### Tablas
+
+La sintaxis para las tablas es la siguiente:
+
+```{.python}
+|Column 1|Column 2|
+|-|-|
+|R1C1|R1C2|
+|R2C1|R2C2|
+```
+
+Se mostrará como:
+
+![](media/Picture16.png)
+
+También puedes especificar las dimensiones de tu tabla agregando:
+
+```{.python}
+|Column 1|Column 2|
+|-|-|
+|R1C1|R1C2|
+|R2C1|R2C2|
+: {tbl-colwidths="[25,60]"}
+```
+
+Se muestra como:
+
+![](media/Picture17.png)
+
+::: {.callout-tip}
+Como la construcción de una tabla en Quarto puede llevar mucho tiempo, si ya tienes una tabla en **Word** o **Excel** puedes copiarla y pegarla en [srkCHAT](https://chat.srk.global/) y pedirle que la transforme en formato markdown.
+
+![](media/Picture9.png)
+:::
+
+### Incluir celdas de Python
+
+En tus informes, es posible que desees mostrar características interactivas. Puedes incluirlas directamente en tu archivo **.qmd**. Ingresa tu script de la siguiente manera y especifica el lenguaje, en este caso, Python.
+
+![](media/Picture21a.png)
+
+Se renderizará de la siguiente manera:
+
+```{python}
+import plotly.graph_objects as go
+import numpy as np
+
+# Generar datos de muestra
+np.random.seed(42)
+data = np.random.randn(500)
+
+# Crear un histograma
+fig = go.Figure()
+
+# Agregar traza para el histograma
+fig.add_trace(go.Histogram(
+    x=data,
+    name='Datos de Muestra',
+    marker=dict(color='hotpink', line=dict(width=0.5))
+))
+
+# Personalizar diseño
+fig.update_layout(
+    title='Histograma usando Plotly',
+    xaxis_title='Valor',
+    yaxis_title='Frecuencia',
+    template='plotly_white'
+)
+
+# Mostrar el gráfico
+fig.show()
+
+```
+
+### Mostrar bloque de código delimitado
+
+Es posible que desees incluir bloques de celdas sin ejecutarlos. En este caso, agrega un **.** antes de **python**.
+
+![](media/Picture22a.png)
+
+Y se renderizará de la siguiente manera:
+
+```{.python}
+import plotly.graph_objects as go
+import numpy as np
+
+# Generar datos de muestra
+np.random.seed(42)
+data = np.random.randn(500)
+
+# Crear un histograma
+fig = go.Figure()
+
+# Agregar traza para el histograma
+fig.add_trace(go.Histogram(
+    x=data,
+    name='Datos de Muestra',
+    marker=dict(color='hotpink', line=dict(width=0.5))
+))
+
+# Personalizar diseño
+fig.update_layout(
+    title='Histograma usando Plotly',
+    xaxis_title='Valor',
+    yaxis_title='Frecuencia',
+    template='plotly_white'
+)
+
+# Mostrar el gráfico
+fig.show()
+```
+
+# Agrega tu repositorio a GitHub
+
+1. Abre **GitHub Desktop** y ve a Archivo > Nuevo Repositorio. Ingresa la ruta local a tu repositorio:
+
+![](media/Picture23.png)
+
+2. Desmarca **Keep this code private** y haz clic en **Publish repository** en la ventana principal de GitHub Desktop.
+
+![](media/Picture24.png)
+
+::: {.callout-note}
+Para usar GitHub Pages para publicar tu sitio web, tu código tendrá que ser público. Si deseas restringir el acceso a tu sitio web, puedes usar una versión paga de **GitHub Enterprise**.
+:::
+
+3. Si vas a la pestaña **History**, puedes cambiar lo que se ha publicado. Deberías ver todo tu repositorio.
+
+![](media/Picture25.png)
+
+4. Ahora ve a tu cuenta en [GitHub](https://github.com/), haz clic en tu imagen de perfil de usuario, repositorio:
+
+![](media/Picture26.png)
+
+# Publicar en GitHub
+
+## Prepara tu proyecto para GitHub
+
+Ahora que has creado tus páginas y que tu repositorio ha sido publicado en GitHub, desplegaremos tu sitio web usando **GitHub Pages**.
+
+1. En tu terminal ingresa:
+
+```{.python}
+quarto render
+```
+Puedes ver que ha creado una carpeta **docs** en la raíz de tu repositorio.
+
+![](media/Picture27.png)
+
+::: {.callout-note}
+Si aún estás visualizando la vista previa de tu sitio web usando ``CTRL+SHIFT+K``, notarás que tu terminal está ocupada. 
+Para detener el comando, haz clic en tu terminal y usa ``CTRL+C``.
+:::
+
+2. Ve a la pestaña ``CONTROL DE FUENTES`` en la barra lateral izquierda de VS Code. Verás que hay varios cambios almacenados. Los vas a confirmar en GitHub.
+
+![](media/Picture28.png)
+
+3. Haz clic en el signo **+** **Stage All Changes** y **COMMIT**. Se abrirá una ventana **COMMIT_EDITMSG**. En la primera línea, ingresa una breve descripción de los cambios. Luego guarda y cierra la ventana.
+
+![](media/Picture29.png)
+
+4. Luego haz clic en **Sync Changes**. Una ventana te advertirá que VS Code va a enviar los cambios a GitHub, haz clic en **OK**.
+
+![](media/Picture30.png)
+
+## GitHub Pages
+
+1. Ve a tu repositorio en línea y haz clic en el recién publicado. Luego en la barra superior ve a **Settings**.
+
+![](media/Picture31.png)
+
+2. En **Settings**, haz clic en **Pages** que se encuentra en la barra de navegación izquierda.
+
+![](media/Picture32.png)
+
+3. En Pages, especifica la rama a **main** y la carpeta a **/docs**. Luego haz clic en ``Save``. Deberías ver aparecer una banda azul *GitHub Pages saved*.
+
+![](media/Picture33.png)
+
+4. Actualiza tu página, ahora deberías ver un enlace a tu sitio web construido como sigue: **https://tu-usuario.github.io/tu-nombre-del-repositorio**. Ve a tu sitio web.
+
+![](media/Picture34.png)
+
+<center><div style="font-size: 150%; color:darkorange"><b>¡Está hecho!</b></div></center>
+
+![](media/Picture35.png)
+

@@ -11,7 +11,7 @@ author:
     affiliation: 
       - name: SRK Consulting Chile SpA 
         url: https://www.srk.com/es/contactenos/chile
-format:
+format: 
   html:
     css: styles/srk.css
     echo: false
@@ -25,21 +25,22 @@ title-block-banner: true
 
 # Introduction
 
-HTML reports are more and more popular as they allow a quick porfessional  look, to include interactive graphs and maps. 
+HTML reports are more and more popular as they allow a quick professional look, to include interactive graphs and maps. 
 Dashboard Power BI is commonly used within SRK ([Dashboard basics](https://learn.microsoft.com/en-us/power-bi/create-reports/service-dashboards)), it is very useful especially for monitoring projects.
+
 But HTML reports have several advantages:
 
 - accessible from any machine (computer, tablets, phone)
 - update it as you go, so you are sure the client is always using the last version
-- you can include an option to create a pdf, word or powerpoint file as client usely use our figures for their own internal reports
+- you can easily include an option to download your report as a pdf, word or powerpoint document as clients usually use our figures for their own internal reports
 
-# Set up your environement
+# Set up your environment
 
-## Install quarto
+## Install Quarto
 
 **Quarto** is an open-source scientific and technical publishing system designed to create high-quality documents, reports, presentations, and websites. It integrates seamlessly with tools and languages such as R, Python, and Jupyter, enabling authors to combine text, code, and visualizations in a single document.
 
-1. Install quarto on your machine. Go to [here](https://quarto.org/docs/get-started/).
+1. Install Quarto on your machine. Go to [here](https://quarto.org/docs/get-started/). You will have to restart your machine.
 
 ::: {.callout-note}
 Extensive documentation is available [online](https://quarto.org/docs/guide/). 
@@ -49,7 +50,7 @@ Extensive documentation is available [online](https://quarto.org/docs/guide/).
 
 In order to use **Quarto** with VS Code, we will need to install the extension.
 
-1. Go the the side bar in VS Code and ``Extension`` or `CTRL+X`.
+1. Go to the side bar in VS Code and ``Extension`` or `CTRL+X`.
 2. Search for Quarto and install the extension. 
 
 ![](media/Picture1.png)
@@ -62,15 +63,13 @@ In order to use **Quarto** with VS Code, we will need to install the extension.
 
 ![](media/Picture2.png)
 
-2. Your folder name will be the name of your repository in github (see [StartCodingToday Course](https://miseppi23.github.io/StartCodingToday)). In this case, I will name in **HowToMakeYourGuide**.
+2. Your folder name will be the name of your repository in GitHub (see [StartCodingToday Course](https://miseppi23.github.io/StartCodingToday)). In this case, I will name it **HowToMakeYourGuide**.
 
-3. To start creating your webpage. Create a New file **.qmd**. Right click on your newly created folder and select `New file`. Here I will call it **HowToMakeYourGuide_Eng.qmd**.
+3. To start creating your webpage, create a new file **.qmd**. Right click on your newly created folder and select `New file`. Here I will call it **HowToMakeYourGuide_Eng.qmd**.
 
 ![](media/Picture3.png)
 
-
-4. Then we will need create and initialize a .yml file which will contain the website information: the title, the navigation bar panels and the webpages (.qmd files) that we will set up next. Create a New file and name it **_quarto.yml**
-
+4. Then we will need to create and initialize a .yml file which will contain the website information: the title, the navigation bar panels, and the webpages (.qmd files) that we will set up next. Create a new file and name it **_quarto.yml**
 
 ![](media/Picture4.png)
 
@@ -94,26 +93,25 @@ format:
     toc: true
 ```
 ::: {.callout-important}
-**output-dir: docs** lines means that the files that quarto will generate for our website will be saved in a folder called **docs**. 
-Make sure this line is present in your .yalm file as it will be key for publishing your site on Github Pages.
+**output-dir: docs** lines mean that the files that Quarto will generate for our website will be saved in a folder called **docs**. 
+Make sure this line is present in your .yml file as it will be key for publishing your site on GitHub Pages.
 :::
 
-5. Open your .qmd file **HowToMakeYourGuide.qmd**. And use the keyboard shortcut ``CTRL+SHIFT+K``. This shortcut should have been installed along with the quarto extension and a side window will open with a preview of your website. This will facilitate the build. 
+5. Open your .qmd file **HowToMakeYourGuide.qmd**. And use the keyboard shortcut ``CTRL+SHIFT+K``. This shortcut should have been installed along with the Quarto extension and a side window will open with a preview of your website. This will facilitate the build. 
 
 ![](media/Picture5.png)
 
 :::::: {.callout-note}
-The **.yalm** file can be updated at anytime. If you want to add a page, change your title, formating etc. We will manage it throughout the website creation.
+The **.yml** file can be updated at any time. If you want to add a page, change your title, formatting, etc. We will manage it throughout the website creation.
 :::
-
 
 ## Add another page
 
-If you want to create another page that will be available in the navigation abr at the top of your website.
+If you want to create another page that will be available in the navigation bar at the top of your website.
 
 1. Create a **New file** and name it according to the content of your second page. In this case: **HowToMakeYourGuide_Span.qmd**
 
-2. You will then need to link it in your **.yalm** file.
+2. You will then need to link it in your **.yml** file.
 
 ```{.python}
 project:
@@ -134,10 +132,10 @@ format:
     theme: cosmo
     toc: true
 ```
-3. ```CTRL+SHIFT+K``. You can now see your two pages at the top.
+
+3. ```CTRL+SHIFT+K```. You can now see your two pages at the top.
 
 ![](media/Picture20.png)
-
 
 # Build your webpage
 
@@ -145,7 +143,7 @@ format:
 
 We can now build our web page.
 
-1. In the .qmd file, we will first specify the title and author. 
+1. In the .qmd file, we will first specify the title and author.
 
 ```{.python}
 ---
@@ -156,14 +154,14 @@ author:
 ```
 
 ::: {.callout-note}
-The header section in the .qmd file is separated by **---**. Make sure there are present and that the indents are respected.
+The header section in the .qmd file is separated by **---**. Make sure they are present and that the indents are respected.
 :::
 
 2. `CTRL+SHIFT+K` should update your preview
 
 ![](media/Picture6.png)
 
-3. You can add as many details as you need: subtitle, date, specify more about the author as degree, affiliation, etc.
+3. You can add as many details as you need: subtitle, date, specify more about the author such as degree, affiliation, etc.
 
 ```{.python}
 ---
@@ -184,11 +182,11 @@ author:
 
 ## Styling
 
-4. Then let's specify the format. Quarto as a standardized format that can be customized with a .css file. An SRK format is available [here](styles/srk.css). 
+4. Then let's specify the format. Quarto has a standardized format that can be customized with a .css file. An SRK format is available [here](styles/srk.css). 
 
-5. Create a folder **Styles** in your repository folder and save the **srk.css** file
+5. Create a folder **Styles** in your repository folder and save the **srk.css** file.
 
-6. You can update your header section using the following keywords. 
+6. You can update your header section using the following keywords.
 
 ```{.python}
 ---
@@ -222,7 +220,7 @@ title-block-banner: true
 
 
 ::: {.callout-tip}
-Instead of linking your .css file to each pages, you can also link it to your **.yalm** file as follow:
+Instead of linking your .css file to each pages, you can also link it to your **.ylm** file as follow:
 
 ```{.python}
 project:
@@ -246,7 +244,6 @@ format:
 
 ## Authoring
 
-
 ### Headings and lists
 
 Six levels of headings are available in Quarto.
@@ -259,13 +256,13 @@ Six levels of headings are available in Quarto.
 ##### Heading 5
 ###### Heading 6
 ```
-It renders as follow: 
+It renders as follows: 
 
 ![](media/Picture10.png)
 
 1. In your .qmd file, below your heading section, enter your section name. For example:
 
-```{.markdown}
+```{.python}
 # Introduction
 
 HTML reports are more and more popular as they allow a quick porfessional  look, to include interactive graphs and maps. 
@@ -276,13 +273,11 @@ HTML reports are more and more popular as they allow a quick porfessional  look,
 ![](media/Picture8.png)
 
 ::: {.callout-tip}
-
 In the heading section:
 
 - **number-sections: true** numbers automatically all headers. If you wish to remove those, change to **false**.
 
-- **toc : true** refers to the table of content. If you want to remove it, change to **false**.
-
+- **toc: true** refers to the table of contents. If you want to remove it, change to **false**.
 :::
 
 3. For lists, you have several options:
@@ -302,7 +297,6 @@ It renders as:
 
 ![](media/Picture14.png)
 
-
 ### Text formatting
 
 You can easily format your text using the following:
@@ -321,7 +315,7 @@ superscript ^2^ / subscript ~2~
 `verbatim code`
 ```
 
-these will display as follow:
+These will display as follows:
 
 ![](media/Picture18.png)
 
@@ -329,11 +323,11 @@ these will display as follow:
 
 You can add notes throughout your site for better comprehension by using **callout**.
 
-1. Write callout in your file. With the Quarto extension it will propose a list of possibilities. Try and select **callout-note**.
+1. Write callout in your file. With the Quarto extension, it will propose a list of possibilities. Try and select **callout-note**.
 
 ![](media/clip1.mp4){loop=true muted=true autoplay=true}
 
-2. Write your note inside the **:::** 
+2. Write your note inside the **:::**
 
 ```{.python}
 ::: {.callout-note}
@@ -341,40 +335,40 @@ Extensive documentation is available [online](https://quarto.org/docs/guide/).
 :::
 ```
 
-3. Hit ```CTRL+SHIFT+K``. 
+3. Hit ```CTRL+SHIFT+K```. 
 
 ![](media/Picture19.png)
 
 ### Links and images
 
-The same syntax can be used for hyperlinks, links, images or even short video clip.
+The same syntax can be used for hyperlinks, links, images, or even short video clips.
 
 ::: {.callout-important}
-We will then use Github Pages to publish our website. 
-Github does not allows files exceeding 100Mb. Make sure that all files related to your website, including downloadable files are below the limitation.
+We will then use GitHub Pages to publish our website. 
+GitHub does not allow files exceeding 100Mb. Make sure that all files related to your website, including downloadable files, are below the limitation.
 :::
 
-1. For hyperlinks use the following syntax. It can be used within the text and will act as an hyperlink to the website in question. 
+1. For hyperlinks, use the following syntax. It can be used within the text and will act as a hyperlink to the website in question.
 
 ```{.python}
 Dashboard Power BI is commonly used within SRK ([Dashboard basics](https://learn.microsoft.com/en-us/power-bi/create-reports/service-dashboards)), it is very useful especially for monitoring projects.
 ```
-will be displayed as:
+Will be displayed as:
 
 ![](media/Picture11.png)
 
 2. Create a folder in your repository called **media**. This is where you will save all images you want to display on your website.
 
-3. For local images use the same syntax. You can also choose to leave the caption empty. You can also specify the dimansions of the image using **{} **.
+3. For local images, use the same syntax. You can also choose to leave the caption empty. You can also specify the dimensions of the image using **{}**.
 
 ```{.python}
 ![](media/Picture1.png)
 ```
-in this case will be displayed as:
+In this case, it will be displayed as:
 
 ![](media/Picture12.png)
 
-4. Use the same syntax to display a video. You can also add specifications as muted, loop, dimensions with **{} **.
+4. Use the same syntax to display a video. You can also add specifications such as muted, loop, dimensions with **{}**.
 
 ```{.python}
 ![](media/clip1.mp4){loop=true muted=true autoplay=true}
@@ -382,7 +376,7 @@ in this case will be displayed as:
 
 ### Tables
 
-The syntax for tables is as follow:
+The syntax for tables is as follows:
 
 ```{.python}
 |Column 1|Column 2|
@@ -391,11 +385,11 @@ The syntax for tables is as follow:
 |R2C1|R2C2|
 ```
 
-it will display as follow:
+It will display as follows:
 
 ![](media/Picture16.png)
 
-you can also specify the dimmensions of your table by adding:
+You can also specify the dimensions of your table by adding:
 
 ```{.python}
 |Column 1|Column 2|
@@ -405,24 +399,23 @@ you can also specify the dimmensions of your table by adding:
 : {tbl-colwidths="[25,60]"}
 ```
 
-that displays as:
+That displays as:
 
 ![](media/Picture17.png)
 
-
 ::: {.callout-tip}
-As the building of a table in quarto can be time consuming, if you already have a table in **Word** or **Excel** you can copy and paste it in [srkChat](https://chat.srk.global/) and ask it to transform it in a markdown format.
+As the building of a table in Quarto can be time-consuming, if you already have a table in **Word** or **Excel** you can copy and paste it in [srkCHAT](https://chat.srk.global/) and ask it to transform it into a markdown format.
 
 ![](media/Picture9.png)
 :::
 
-### Include python cells
+### Include Python cells
 
-In your reports, you might want to display interactive features, you can include them directly in your **.qmd** file. Enter your scritpt as follow and spcify the language, in this case Python
+In your reports, you might want to display interactive features. You can include them directly in your **.qmd** file. Enter your script as follows and specify the language, in this case, Python.
 
 ![](media/Picture21.png)
 
-It will render as follow:
+It will render as follows:
 
 ```{python}
 import plotly.graph_objects as go
@@ -457,11 +450,11 @@ fig.show()
 
 ### Display fenced code block
 
-You might want to include cells block without running them. In this case add a **.** before **python**.
+You might want to include cells block without running them. In this case, add a **.** before **python**.
 
 ![](media/Picture22.png)
 
-and it will render as follow:
+And it will render as follows:
 
 ```{.python}
 import plotly.graph_objects as go
@@ -493,30 +486,35 @@ fig.update_layout(
 fig.show()
 ```
 
-# Add your repository to Github
+# Add your repository to GitHub
 
-1. Open **Github Desktop** and go to File>New Repository. Enter the local path to your repository:
+1. Open **GitHub Desktop** and go to File > New Repository. Enter the local path to your repository:
 
 ![](media/Picture23.png)
 
-2. Once created click on **Publish repository** in Github Desktop main window.
+2. Uncheck **Keep this code private** and click on **Publish repository** in GitHub Desktop main window.
 
 ![](media/Picture24.png)
 
-3. If you go the the **History** tab, you can change what has been publish. You should see all your repository.
+::: {.callout-note}
+In order to use GitHub Pages to publish your website, your code will have to be public. If you want to restrict access to your website, you can use a paid version of **GitHub Enterprise**.
+:::
+
+3. If you go to the **History** tab, you can change what has been published. You should see all your repository.
 
 ![](media/Picture25.png)
 
-4. Now go to your account on [Github](https://github.com/), click on your user profile image, repository:
+4. Now go to your account on [GitHub](https://github.com/), click on your user profile image, repository:
 
 ![](media/Picture26.png)
 
+# Publish to GitHub
 
-# Publish to Github
+## Prepare your project for GitHub
 
-Now that you created your pages and that your repository have been publish on Github, we will deploy your website using **Github Pages**.
+Now that you created your pages and that your repository has been published on GitHub, we will deploy your website using **GitHub Pages**.
 
-1. In your terminal enter: 
+1. In your terminal enter:
 
 ```{.python}
 quarto render
@@ -526,18 +524,43 @@ You can see it has created a **docs** folder at the root of your repository.
 ![](media/Picture27.png)
 
 ::: {.callout-note}
-If you are still visualising the preview of your website using ``CTRL+SHIFT+K``, you will notice that your terminal is busy. 
+If you are still visualizing the preview of your website using ``CTRL+SHIFT+K``, you will notice that your terminal is busy. 
 In order to kill the command, click on your terminal and use ``CTRL+C``.
 :::
 
-2. Go to the ``SOURCE CONTROL`` tab on the left side bar of VS code. You'll see there is several changes stashed. You will commit them to github.
+2. Go to the ``SOURCE CONTROL`` tab on the left sidebar of VS Code. You'll see there are several changes stashed. You will commit them to GitHub.
 
 ![](media/Picture28.png)
 
-3. Click on the **+** sign **Staged All Changes**. 
+3. Click on the **+** sign **Stage All Changes** and **COMMIT**. A window **COMMIT_EDITMSG** will open. On the first line, enter a short description of changes. Then save and close the window.
 
 ![](media/Picture29.png)
 
-4. Then click on **Commit**.
+4. Then click on **Sync Changes**. A window will warn you that VS Code is going to push the changes to GitHub, click **OK**.
 
+![](media/Picture30.png)
+
+## GitHub Pages
+
+1. Go to your online repository and click on your newly published one. Then on the top bar go to **Settings**.
+
+![](media/Picture31.png)
+
+2. In **Settings**, click on **Pages** that is located on the left navigation bar.
+
+![](media/Picture32.png)
+
+3. In Pages, specify the branch to **main** and the folder to **/docs**. Then click ``Save``. You should see a blue banner appear *GitHub Pages saved*.
+
+![](media/Picture33.png)
+
+4. Update your page, you should now see a link to your website built as follows: **https://your-username.github.io/your-repository-name**. Go to your website.
+
+![](media/Picture34.png)
+
+
+<center><div style="font-size: 150%; color:darkorange"><b>It is done!</b></div></center>
+
+
+![](media/Picture35.png)
 
