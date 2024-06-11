@@ -485,6 +485,38 @@ fig.update_layout(
 # Mostrar el gráfico
 fig.show()
 ```
+## Modo Visual Studio
+
+### Modo de edición
+
+El modo Visual Studio permite acceder a todos los estilos de autoría.
+
+![](media/Picture36.png){width="191"}
+
+Una vez en el modo Visual, la barra superior permite acceder a todo el formato y tener una vista previa directa de su informe, incluyendo la tabla de contenido para una navegación más fácil.
+
+![](media/Picture37.png){#pic37 width="516"}
+
+Para incluir una imagen o un enlace, vaya a la barra superior y haga clic en el icono de imagen, ingrese la ruta relativa a su imagen. También puede agregar atributos que se pueden usar para llamar a la imagen en su texto usando **\@** o Insertar\>Referencia cruzada.
+
+![](media/Picture38.png){#pic38}
+
+### Referencias bibliográficas
+
+Puede vincular [Zotero](https://www.zotero.org/) directamente a su informe interactivo.
+
+Zotero es un software gratuito que permite recopilar, organizar, anotar y citar investigaciones.
+
+Con la herramienta de complemento de Google, puede guardar investigaciones directamente en su Zotero y luego llamarlas en su informe.
+
+Vaya a Insertar\>Cita...
+
+![](media/Picture39.png){width="357"}
+
+A medida que cite artículos en su texto, se actualizará automáticamente una tabla de referencias al final de su documento:
+
+![](media/Picture40.png){width="395"}
+
 
 # Agrega tu repositorio a GitHub
 
